@@ -69,4 +69,17 @@ self.addEventListener('message', (event) => {
   }
 });
 
-// Any other custom service worker logic can go here.
+// 监听推送事件
+self.addEventListener('message', (event) => {
+    if (event.data && event.data.type === 'SHOW_NOTIFICATION') {
+        console.log('Received a message from client', event.data);
+
+        const {title, options} = event.data;
+
+        setTimeout(() => {;
+            self.registration.showNotification(title, options);
+            console.log(self.registration.showNotification);
+            console.log('Notification sent');
+        }, event.data.delay);
+    }
+});
