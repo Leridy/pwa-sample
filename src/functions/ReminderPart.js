@@ -1,6 +1,7 @@
 import React from 'react';
+import {Box, Button} from "@mui/material";
 
-const NotificationPart = (props) => {
+const ReminderPart = (props) => {
     const handleReminder = () => {
         // use prompt to collect user input and delay the notification
         const delay = prompt('Enter the delay in seconds');
@@ -26,10 +27,12 @@ const NotificationPart = (props) => {
     }
 
   return (
-       <button onClick={handleReminder}>
+      <Box>
+       <Button onClick={handleReminder} variant={'contained'}>
             Click me to set a reminder
-        </button>
+        </Button>
+      </Box>
   );
 };
 
-export default NotificationPart;
+export default ReminderPart;

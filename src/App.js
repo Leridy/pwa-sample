@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import NotificationPart from "./functions/NotificationPart";
+import ReminderPart from "./functions/ReminderPart";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
 
           <div className={'container'}>
-                  <NotificationPart />
+                  <ReminderPart />
           </div>
       </header>
     </div>
