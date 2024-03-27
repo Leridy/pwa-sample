@@ -4,9 +4,9 @@ import {Box, Button} from "@mui/material";
 const ReminderPart = (props) => {
     const handleReminder = () => {
         // use prompt to collect user input and delay the notification
-        const delay = prompt('Enter the delay in seconds');
-        const notificationTitle = prompt('Enter the notification title');
-        const notificationBody = prompt('Enter the notification body');
+        const delay = prompt('Enter the delay in seconds (default value is 5 seconds)') || 5;
+        const notificationTitle = prompt('Enter the notification title') || 'Reminder'
+        const notificationBody = prompt('Enter the notification body') || 'This is a reminder';
 
         // use service worker to send a notification
         if ('serviceWorker' in navigator) {
