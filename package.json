@@ -2,7 +2,7 @@
   "name": "my-pwa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://leridy.github.io/pwa-sample/build",
+  "homepage": "https://leridy.github.io/pwa-sample/build/",
   "dependencies": {
     "@amap/amap-jsapi-loader": "^1.0.1",
     "@emotion/react": "^11.11.4",
