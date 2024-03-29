@@ -4,10 +4,11 @@ import ReminderPart from "./functions/ReminderPart";
 import {Alert, AppBar, Snackbar, Stack, Tab, Tabs, Toolbar} from "@mui/material";
 
 
-import {Bluetooth, Camera, Info, MyLocation, Notifications} from "@mui/icons-material";
+import {Bluetooth, Camera, FileOpen, Info, MyLocation, Notifications} from "@mui/icons-material";
 import RuntimeInfo from "./functions/RuntimeInfo";
 import {CameraPart} from "./functions/CameraPart";
 import {BluetoothPart} from "./functions/BluetoothPart";
+import {GeoLocationPart} from "./functions/GeoLocationPart";
 
 function App() {
     const [currentTab, setCurrentTab] = useState(0);
@@ -34,11 +35,9 @@ function App() {
             <header className="App-header">
                 {currentTab === 0 && <RuntimeInfo/>}
                 {currentTab === 1 && <ReminderPart onMessage={handleMessage}/>}
-
                 {currentTab === 2 && <CameraPart onMessage={handleMessage}/>}
                 {currentTab === 3 && <BluetoothPart onMessage={handleMessage}/> }
-                {currentTab === 4 && <p>GeoLocation</p>}
-
+                {currentTab === 4 && <GeoLocationPart onMessage={handleMessage}/> }
             </header>
             <Tabs
                 variant={'fullWidth'}
@@ -50,7 +49,7 @@ function App() {
                 <Tab label={'Camera'} icon={<Camera/>}/>
                 <Tab label={'Bluetooth'} icon={<Bluetooth/>}/>
                 <Tab label={'GeoLocation'} icon={<MyLocation/>}/>
-                <Tab label={'File System'} icon={<MyLocation/>}/>
+                <Tab label={'File System'} icon={<FileOpen />}/>
             </Tabs>
 
             <Snackbar

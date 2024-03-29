@@ -61,8 +61,6 @@ const RuntimeInfo = () => {
         // set the result to the state
         setRuntimeInfo(result);
         setNavigatorInfo(navigator);
-
-        console.log(result);
     };
 
     useEffect(() => {
