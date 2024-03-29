@@ -9,6 +9,7 @@ import RuntimeInfo from "./functions/RuntimeInfo";
 import {CameraPart} from "./functions/CameraPart";
 import {BluetoothPart} from "./functions/BluetoothPart";
 import {GeoLocationPart} from "./functions/GeoLocationPart";
+import {FilePart} from "./functions/FilePart";
 
 function App() {
     const [currentTab, setCurrentTab] = useState(0);
@@ -38,6 +39,7 @@ function App() {
                 {currentTab === 2 && <CameraPart onMessage={handleMessage}/>}
                 {currentTab === 3 && <BluetoothPart onMessage={handleMessage}/> }
                 {currentTab === 4 && <GeoLocationPart onMessage={handleMessage}/> }
+                {currentTab === 5 && <FilePart onMessage={handleMessage}/>}
             </header>
             <Tabs
                 variant={'fullWidth'}
