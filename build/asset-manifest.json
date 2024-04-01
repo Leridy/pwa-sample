@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pwa-sample/build/static/css/main.00146085.css",
-    "main.js": "/pwa-sample/build/static/js/main.12048178.js",
+    "main.js": "/pwa-sample/build/static/js/main.e4811cb3.js",
     "static/js/453.743563ca.chunk.js": "/pwa-sample/build/static/js/453.743563ca.chunk.js",
     "service-worker.js": "/pwa-sample/build/service-worker.js",
     "static/media/roboto-latin-500-normal.woff2": "/pwa-sample/build/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
@@ -62,11 +62,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/pwa-sample/build/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/pwa-sample/build/index.html",
     "main.00146085.css.map": "/pwa-sample/build/static/css/main.00146085.css.map",
-    "main.12048178.js.map": "/pwa-sample/build/static/js/main.12048178.js.map",
+    "main.e4811cb3.js.map": "/pwa-sample/build/static/js/main.e4811cb3.js.map",
     "453.743563ca.chunk.js.map": "/pwa-sample/build/static/js/453.743563ca.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.00146085.css",
-    "static/js/main.12048178.js"
+    "static/js/main.e4811cb3.js"
   ]
 }
